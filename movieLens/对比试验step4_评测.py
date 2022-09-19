@@ -102,16 +102,16 @@ def visualization_precision():
     userCF = [0,0.37691,0.34523,0.32932,0.31342,0.28913]
     x = [0,5,10,15,20,25]
 
-    plt.xlabel("number of recommend item / k")
-    plt.ylabel("Precision / k")
+    plt.xlabel("topK推荐数量/个",fontsize=16)
+    plt.ylabel("DCF算法准确率",fontsize=16)
 
-    plt.plot(x,data,color="black", marker="o",linestyle="-",label="Precision",markersize="3")
-    plt.plot(x,K_means,color="black", marker="o",linestyle="-.",label="Precision",markersize="3")
-    plt.plot(x,userCF,color="black", marker="o",linestyle="--",label="Precision",markersize="3")
+    plt.plot(x,data,color="black", marker="o",linestyle="-",label="Precision",markersize="4")
+    plt.plot(x,K_means,color="black", marker="o",linestyle="-.",label="Precision",markersize="4")
+    plt.plot(x,userCF,color="black", marker="o",linestyle="--",label="Precision",markersize="4")
     # plt.fill_between(x,data)
     plt.xticks([0,5,10,15,20,25])
     plt.yticks([0.0,0.2,0.4,0.6,0.8])
-    plt.legend(['UCFAC', 'K-means', 'userCF'])
+    plt.legend(['DCF', 'K-means', 'userCF'],fontsize=16)
     #plt.grid()
     plt.show()
 
@@ -121,16 +121,16 @@ def visualization_recall():
     userCF = [0,0.0388,0.07312,0.0912,0.1191,0.15213]
     x = [0,5,10,15,20,25]
 
-    plt.xlabel("number of recommend item / k")
-    plt.ylabel("Recall / k")
+    plt.xlabel("topK推荐数量/个",fontsize=16)
+    plt.ylabel("DCF算法召回率",fontsize=16)
 
-    plt.plot(x,data,color="black", marker="o",linestyle="-",label="Precision",markersize="3")
-    plt.plot(x,K_means,color="black", marker="o",linestyle="-.",label="Precision",markersize="3")
-    plt.plot(x,userCF,color="black", marker="o",linestyle="--",label="Precision",markersize="3")
+    plt.plot(x,data,color="black", marker="o",linestyle="-",label="Precision",markersize="4")
+    plt.plot(x,K_means,color="black", marker="o",linestyle="-.",label="Precision",markersize="4")
+    plt.plot(x,userCF,color="black", marker="o",linestyle="--",label="Precision",markersize="4")
     # plt.fill_between(x,data)
     plt.xticks([0,5,10,15,20,25])
     plt.yticks([0.0,0.1,0.2,0.3,0.4])
-    plt.legend(['UCFAC', 'K-means', 'userCF'])
+    plt.legend(['DCF', 'K-means', 'userCF'],fontsize=16)
     #plt.grid()
     plt.figure(figsize=(10, 10))
     plt.show()
@@ -141,18 +141,28 @@ def visualization_f1():
     userCF = [0,0.070357084,0.120502392,0.14482072,0.162605503,0.201315556]
     x = [0,5,10,15,20,25]
 
-    plt.xlabel("number of recommend item / k")
-    plt.ylabel("f1 / k")
+    plt.xlabel("topK推荐数量/个",fontsize=16)
+    plt.ylabel("DCF算法f1值",fontsize=16)
 
-    plt.plot(x,data,color="black", marker="o",linestyle="-",label="Precision",markersize="3")
-    plt.plot(x,K_means,color="black", marker="o",linestyle="-.",label="Precision",markersize="3")
-    plt.plot(x,userCF,color="black", marker="o",linestyle="--",label="Precision",markersize="3")
+    plt.plot(x,data,color="black", marker="o",linestyle="-",label="Precision",markersize="4")
+    plt.plot(x,K_means,color="black", marker="o",linestyle="-.",label="Precision",markersize="4")
+    plt.plot(x,userCF,color="black", marker="o",linestyle="--",label="Precision",markersize="4")
     # plt.fill_between(x,data)
     plt.xticks([0,5,10,15,20,25])
     plt.yticks([0.0,0.1,0.2,0.3,0.4])
-    plt.legend(['UCFAC', 'K-means', 'userCF'])
+    plt.legend(['DCF', 'K-means', 'userCF'],fontsize=16)
     #plt.grid()
     plt.show()
+
+def coverage():
+    set = {""}
+    for i in range(1,300):
+        dataPath = outfile="D:\\development\\recommandSystem\\recommandSystem_experience\\movieLens\\测试数据\\T1=100,T2=100_recommend\\user_{}_k邻=30_recommend.xls".format(i)
+        csv = pd.read_excel(dataPath)
+        for index, row in csv.iterrows():
+            set.add(row[0])
+    print(len(set))
+    return len(set)
 
 if __name__ == '__main__':
      # m_recall = 0
@@ -169,8 +179,14 @@ if __name__ == '__main__':
      # print("准确率：" + m_precision)
      # print("F1值：" + m_f1)
 
-     visualization_precision()
 
-     visualization_recall()
+     # plt.rcParams['font.sans-serif'] = ['SimHei']  # 显示中文标签 plt.rcParams[‘axes.unicode_minus’]=False
+     # visualization_precision()
      #
-     visualization_f1()
+     # visualization_recall()
+     # #
+     # visualization_f1()
+
+     total = coverage()
+
+     print(total / 6000)

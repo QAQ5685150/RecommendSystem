@@ -4,6 +4,7 @@
 # file 对比试验step3_推荐.py
 
 import math
+import time
 from operator import *
 import pandas as pd
 import numpy as np
@@ -98,10 +99,11 @@ def Recommend(user, dicc, W2, K):
 
 
 if __name__ == '__main__':
+    t = time.time()
     file="D:\\development\\recommandSystem\\recommandSystem_experience\\movieLens\\测试数据\\user_id_Cluster_T1=100,T2=100.xls"
     data=pd.read_excel(file)
     #print(data)
-    for i in range(1,50,1):#用户id  给前50个用户推荐 形成推荐列表
+    for i in range(1,500,1):#用户id  给前50个用户推荐 形成推荐列表
         dic = {}
         cluster=[]
         cluster_num=find_Cluster(i)#找到用户在哪个簇
@@ -123,3 +125,8 @@ if __name__ == '__main__':
         outcome.to_excel(outfile,index=False)
 
 print("推荐完毕！")
+# 统计程序耗时
+# 100 - 7s
+# 300 - 18s
+# 500 - 31s
+print(f"func times:{time.time() - t}" )
