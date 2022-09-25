@@ -7,30 +7,35 @@ import numpy as np
 
 pd.set_option('display.max_columns',None)
 
-ratings_path = "D:\\development\\ml-1m\\ratings.csv"
-movie_path = "D:\\development\\ml-1m\\movies.csv"
+ratings_path = "D:\\development\\data_set\\ml-1m\\ratings.dat"
+movie_path = "D:\\development\\data_set\\ml-1m\\movies.dat"
 
-ratings_csv = pd.read_csv(ratings_path)
-movies_csv = pd.read_csv(movie_path)
+ratings_csv = pd.read_csv(ratings_path,delimiter="::")
+movies_csv = pd.read_csv(movie_path,delimiter="::")
+print(ratings_csv)
+print(movies_csv)
 
 train = []
 test = []
-
-merge = pd.merge(movies_csv,ratings_csv,  on='movieId')
+all = []
+merge = pd.merge(movies_csv,ratings_csv,  on='MovieID')
 merge.sort_values
-merge.drop('timestamp',1,inplace = True)
-merge.sort_values(by="userId" , inplace=True, ascending=True)
+merge.drop('Timestamp',1,inplace = True)
+merge.sort_values(by="UserID" , inplace=True, ascending=True)
 
 
 for index, row in merge.iterrows():
     #print(index)
+    all.append(row)
     if (index+1)% 5:
         train.append(row)
     else:
         test.append(row)
 
+all_frame = pd.DataFrame(all)
 train_frame = pd.DataFrame(train)
 test_frame = pd.DataFrame(test)
 
 train_frame.to_csv("D:\\development\\py_project\\hello_world\\movieLens\\实验数据\\实验数据_test_clear.csv",index=False,encoding='utf-8')
 test_frame.to_csv("D:\\development\\py_project\\hello_world\\movieLens\\测试数据\\测试数据_test_clear.csv",index=False,encoding='utf-8')
+all_frame.to_csv("D:\development\\recommandSystem\\recommandSystem_experience\\movieLens\\apriori\\all_data.csv",index=False,encoding='utf-8')

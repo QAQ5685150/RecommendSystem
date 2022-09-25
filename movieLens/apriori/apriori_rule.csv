@@ -1,0 +1,59 @@
+,0,1
+0,0.5675496688741721,frozenset({'American Beauty (1999)'})
+1,0.4951986754966887,frozenset({'Star Wars: Episode IV - A New Hope (1977)'})
+2,0.49503311258278143,frozenset({'Star Wars: Episode V - The Empire Strikes Back (1980)'})
+3,0.477317880794702,frozenset({'Star Wars: Episode VI - Return of the Jedi (1983)'})
+4,0.4423841059602649,frozenset({'Jurassic Park (1993)'})
+5,0.4392384105960265,frozenset({'Saving Private Ryan (1998)'})
+6,0.43857615894039736,frozenset({'Terminator 2: Judgment Day (1991)'})
+7,0.4288079470198676,"frozenset({'Matrix, The (1999)'})"
+8,0.42764900662251654,frozenset({'Back to the Future (1985)'})
+9,0.42682119205298014,"frozenset({'Silence of the Lambs, The (1991)'})"
+10,0.42019867549668877,frozenset({'Men in Black (1997)'})
+11,0.4162251655629139,frozenset({'Raiders of the Lost Ark (1981)'})
+12,0.4160596026490066,frozenset({'Fargo (1996)'})
+13,0.40711920529801326,"frozenset({'Sixth Sense, The (1999)'})"
+14,0.40447019867549666,frozenset({'Braveheart (1995)'})
+15,0.3922185430463576,frozenset({'Shakespeare in Love (1998)'})
+16,0.38990066225165565,"frozenset({'Star Wars: Episode V - The Empire Strikes Back (1980)', 'Star Wars: Episode IV - A New Hope (1977)'})"
+17,0.3837748344370861,"frozenset({'Princess Bride, The (1987)'})"
+18,0.38145695364238413,"frozenset({""Schindler's List (1993)""})"
+19,0.37880794701986753,frozenset({'L.A. Confidential (1997)'})
+20,0.37715231788079473,frozenset({'Groundhog Day (1993)'})
+21,0.37566225165562916,frozenset({'E.T. the Extra-Terrestrial (1982)'})
+22,0.37251655629139074,frozenset({'Star Wars: Episode I - The Phantom Menace (1999)'})
+23,0.3710264900662252,frozenset({'Being John Malkovich (1999)'})
+24,0.36887417218543045,"frozenset({'Star Wars: Episode VI - Return of the Jedi (1983)', 'Star Wars: Episode V - The Empire Strikes Back (1980)'})"
+25,0.36870860927152316,"frozenset({'Shawshank Redemption, The (1994)'})"
+26,0.36804635761589405,"frozenset({'Godfather, The (1972)'})"
+27,0.36324503311258277,frozenset({'Forrest Gump (1994)'})
+28,0.3610927152317881,frozenset({'Ghostbusters (1984)'})
+29,0.35943708609271524,frozenset({'Pulp Fiction (1994)'})
+30,0.34983443708609274,"frozenset({'Star Wars: Episode VI - Return of the Jedi (1983)', 'Star Wars: Episode IV - A New Hope (1977)'})"
+31,0.34735099337748343,"frozenset({'Terminator, The (1984)'})"
+32,0.3438741721854305,frozenset({'Toy Story (1995)'})
+33,0.3350993377483444,frozenset({'Alien (1979)'})
+34,0.33096026490066227,"frozenset({'Raiders of the Lost Ark (1981)', 'Star Wars: Episode V - The Empire Strikes Back (1980)'})"
+35,0.3304635761589404,frozenset({'Total Recall (1990)'})
+36,0.3302980132450331,"frozenset({'Fugitive, The (1993)'})"
+37,0.32748344370860927,"frozenset({'Terminator 2: Judgment Day (1991)', 'Matrix, The (1999)'})"
+38,0.3264900662251656,"frozenset({'Raiders of the Lost Ark (1981)', 'Star Wars: Episode IV - A New Hope (1977)'})"
+39,0.3210264900662252,"frozenset({'Jurassic Park (1993)', 'Men in Black (1997)'})"
+40,0.31887417218543046,"frozenset({'Star Wars: Episode V - The Empire Strikes Back (1980)', 'Star Wars: Episode VI - Return of the Jedi (1983)', 'Star Wars: Episode IV - A New Hope (1977)'})"
+41,0.3185430463576159,frozenset({'Gladiator (2000)'})
+42,0.31788079470198677,"frozenset({'Matrix, The (1999)', 'Star Wars: Episode V - The Empire Strikes Back (1980)'})"
+43,0.3163907284768212,"frozenset({'Terminator 2: Judgment Day (1991)', 'Star Wars: Episode V - The Empire Strikes Back (1980)'})"
+44,0.3160596026490066,"frozenset({'Jurassic Park (1993)', 'Terminator 2: Judgment Day (1991)'})"
+45,0.31589403973509933,"frozenset({'Matrix, The (1999)', 'Star Wars: Episode IV - A New Hope (1977)'})"
+46,0.31539735099337746,"frozenset({'Back to the Future (1985)', 'Star Wars: Episode V - The Empire Strikes Back (1980)'})"
+47,0.3127483443708609,"frozenset({'Terminator 2: Judgment Day (1991)', 'Star Wars: Episode IV - A New Hope (1977)'})"
+48,0.3119205298013245,"frozenset({'Being John Malkovich (1999)', 'American Beauty (1999)'})"
+49,0.3072847682119205,"frozenset({'American Beauty (1999)', 'Fargo (1996)'})"
+50,0.30711920529801323,"frozenset({'Terminator 2: Judgment Day (1991)', 'Men in Black (1997)'})"
+51,0.30579470198675496,"frozenset({'American Beauty (1999)', 'Silence of the Lambs, The (1991)'})"
+52,0.3054635761589404,"frozenset({'Back to the Future (1985)', 'Star Wars: Episode IV - A New Hope (1977)'})"
+53,0.3036423841059603,"frozenset({'Jurassic Park (1993)', 'Matrix, The (1999)'})"
+54,0.3028145695364238,"frozenset({'American Beauty (1999)', 'Star Wars: Episode V - The Empire Strikes Back (1980)'})"
+55,0.3019867549668874,"frozenset({'Jurassic Park (1993)', 'Star Wars: Episode IV - A New Hope (1977)'})"
+56,0.30132450331125826,frozenset({'Aliens (1986)'})
+57,0.30033112582781457,"frozenset({'Jurassic Park (1993)', 'Star Wars: Episode V - The Empire Strikes Back (1980)'})"
